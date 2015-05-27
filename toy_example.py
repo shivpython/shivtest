@@ -29,6 +29,6 @@ def revrse_string(your_input):
     return output
 your_input = raw_input()
 if isinstance(your_input, str):    
-    revrse_string(your_input)
+    print revrse_string(your_input)
 
-print output
+    
