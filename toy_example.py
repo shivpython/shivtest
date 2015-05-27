@@ -11,7 +11,7 @@ print 'summm',fiboanc_sum(4000000)
 
 #Ans 2.
 naturalnumber =[each for each in xrange(1,1000) if each%3 == 0 or each%5 == 0 ]
-print 'naturalnumber', naturalnumber
+print 'naturalnumber', sum(naturalnumber)
 
 
 #Ans1.
