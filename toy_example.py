@@ -15,15 +15,20 @@ print 'naturalnumber', sum(naturalnumber)
 
 
 #Ans1.
-your_input = raw_input()#"We are at Ignite Solutions! Their email-id is careers@ignitesol.com"
-output = ""
-delimiters = ["@","!"," ", ",", ";", ".", "\n"]
-i = 0
-for j in range(1, len(your_input)):
-    if your_input[j] in delimiters:
-        output += your_input[i:j][::-1] + your_input[j]
-        i = j+1
-    elif j==len(your_input)-1:
-        output += your_input[i:j+1][::-1]
+def revrse_string(your_input):
+    output = ""
+    delimiters = ["@","!"," ", ",", ";", ".", "\n"]
+    i = 0
+    for j in range(1, len(your_input)):
+        if your_input[j] in delimiters:
+            output += your_input[i:j][::-1] + your_input[j]
+            i = j+1
+        elif j==len(your_input)-1:
+            output += your_input[i:j+1][::-1]
+    
+    return output
+your_input = raw_input()
+if isinstance(your_input, str):    
+    revrse_string(your_input)
 
 print output
